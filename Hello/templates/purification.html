@@ -1,0 +1,861 @@
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaterWare.Com Site In Awais Qamar</title>
+    <link rel="stylesheet" href="{% static 'css/cssawais5.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Delicious+Handrawn&display=swap" rel="stylesheet">
+</head>
+<style>
+    .khani90 #popcart {
+        background-color: white;
+        color: black;
+        border: none;
+        font-size: 23px;
+    }
+    
+    #popup {
+        width: 28%;
+        text-align: center;
+        position: relative;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: 37%;
+        margin-top: 10px;
+        background-color: white;
+        border-radius: 20px;
+        top: -1147%;
+    }
+    
+    #popup img {
+        width: 95px;
+        height: 95px;
+        border-radius: 50%;
+        text-align: center;
+        justify-content: center;
+        margin-left: 135px;
+        margin-top: -50px;
+    }
+    
+    #popup h1 {
+        color: black;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: 'Times New Roman', Times, serif;
+        padding-top: 40px;
+    }
+    
+    #popup h5 {
+        color: black;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: cursive;
+        padding: 30px;
+        padding-top: 20px;
+    }
+    
+    #popup button {
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px 0px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(0, 255, 0);
+        color: white;
+        font-size: 20px;
+        font-weight: 900;
+        font-family: cursive;
+        cursor: pointer;
+        width: 50%;
+        margin-left: 93px;
+        margin-bottom: 30px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-white fixed-top py-3">
+
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav khan">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="shopall.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span onclick="window.location.href='shopall.html'">SHOP ALL</span>
+                        </a>
+                        <ul class="dropdown-menu khan1">
+                            <div class="home5-page">
+                                <div class="home-page">
+                                    <a href="shopall.html"><button class="anas">Explore All</button></a>
+                                    <a href="hydrations.html"><button class="anasone">Hydration Set</button></a>
+                                    <li><a class="dropdown-item anas3" href="accessries.html">Filters & Accessories</a></li>
+                                    <li><a class="dropdown-item anas4" href="corporate.html">Corporate gifting</a></li>
+                                    <div class="home1-page">
+                                        <h6>Learn More</h6>
+                                        <li><a class="dropdown-item anas5" href="purevis.html">PureVis™ technology</a></li>
+                                        <li><a class="dropdown-item anas6" href="nanozero.html">Nano Zero technology</a></li>
+                                    </div>
+                                </div>
+                                <div class="home2-page">
+                                    <img src="/static/images/1.webp">
+                                    <h1>Purifaction</h1>
+                                    <p>Filter or Prufi water on the go</p>
+                                </div>
+                                <div class="home3-page">
+                                    <img src="/static/images/2.webp">
+                                    <h1>Home</h1>
+                                    <p>Equipe your home with Nano Zero technology</p>
+                                </div>
+                                <div class="home4-page">
+                                    <img src="/static/images/3.webp">
+                                    <h1>Drinkware</h1>
+                                    <p>Hydrate Effortlessy on the go</p>
+                                </div>
+                            </div>
+                        </ul>
+
+                    </li>
+                </ul>
+                <ul class="navbar-nav hassan">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="purification.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span onclick="window.location.href='purification.html'">PURIFICATION</span>
+                        </a>
+                        <ul class="dropdown-menu hassan1">
+                            <div class="home5-page">
+                                <div class="home-page">
+                                    <a href="exploreall.html"><button class="anas">Explore All</button></a>
+                                    <a href="hydrations.html"><button class="anasone">Hydration Set</button></a>
+                                    <li><a class="dropdown-item anas3" href="accessries.html">Filters & Accessories</a></li>
+                                    <li><a class="dropdown-item anas4" href="corporate.html">Corporate gifting</a></li>
+                                    <div class="home1-page">
+                                        <h6>Learn More</h6>
+                                        <li><a class="dropdown-item anas5" href="purevis.html">PureVis™ technology</a></li>
+                                        <li><a class="dropdown-item anas6" href="nanozero.html">Nano Zero technology</a></li>
+                                    </div>
+                                </div>
+                                <div class="home6-page">
+                                    <img src="/static/images/4.webp">
+                                    <h1>LARQ Bottle PureVis™</h1>
+                                    <p>From $99</p>
+                                </div>
+                                <div class="home7-page">
+                                    <img src="/static/images/5.webp">
+                                    <h1>LARQ Bottle Movement PureVis™</h1>
+                                    <p>From 89</p>
+                                </div>
+                                <div class="home9-page">
+                                    <img src="/static/images/6.webp">
+                                    <h1>LARQ Bottle Filtered</h1>
+                                    <p>From $49.95</p>
+                                </div>
+                            </div>
+                        </ul>
+
+                    </li>
+                </ul>
+                <ul class="navbar-nav hassan">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="homeone.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span onclick="window.location.href='homeone.html'">HOME</span>
+                        </a>
+                        <ul class="dropdown-menu hassan2">
+                            <div class="home5-page">
+                                <div class="home-page">
+                                    <a href="exploreall.html"><button class="anas">Explore All</button></a>
+                                    <a href="hydrations.html"><button class="anasone">Hydration Set</button></a>
+                                    <li><a class="dropdown-item anas3" href="accessries.html">Filters & Accessories</a></li>
+                                    <li><a class="dropdown-item anas4" href="corporate.html">Corporate gifting</a></li>
+                                    <div class="home1-page">
+                                        <h6>Learn More</h6>
+                                        <li><a class="dropdown-item anas5" href="purevis.html">PureVis™ technology</a></li>
+                                        <li><a class="dropdown-item anas6" href="nanozero.html">Nano Zero technology</a></li>
+                                    </div>
+                                </div>
+                                <div class="home6-page">
+                                    <img src="/static/images/7.webp">
+                                    <h1>LARQ Pitcher PureVis™</h1>
+                                    <p>From $139.00</p>
+                                </div>
+                                <div class="home7-page">
+                                    <img src="/static/images/8.webp">
+                                    <h1>LARQ Pitcher PureVis Pitcher</h1>
+                                    <p>From $79</p>
+                                </div>
+                                <div class="home9-page">
+                                    <img src="/static/images/8.webp">
+                                    <h1>LARQ Pitcher PureVis™</h1>
+                                    <p>From $139.95</p>
+                                </div>
+                            </div>
+                        </ul>
+
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav hassan">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="drinkware.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span onclick="window.location.href='drinkware.html'">DRINKWARE</span>
+                        </a>
+                        <ul class="dropdown-menu hassan3">
+                            <div class="home5-page">
+                                <div class="home-page">
+                                    <a href="exploreall.html"><button class="anas">Explore All</button></a>
+                                    <a href="hydrations.html"><button class="anasone">Hydration Set</button></a>
+                                    <li><a class="dropdown-item anas3" href="accessries.html">Filters & Accessories</a></li>
+                                    <li><a class="dropdown-item anas4" href="corporate.html">Corporate gifting</a></li>
+                                    <div class="home1-page">
+                                        <h6>Learn More</h6>
+                                        <li><a class="dropdown-item anas5" href="purevis.html">PureVis™ technology</a></li>
+                                        <li><a class="dropdown-item anas6" href="nanozero.html">Nano Zero technology</a></li>
+                                    </div>
+                                </div>
+                                <div class="home6-page">
+                                    <img src="/static/images/9.webp">
+                                    <h1>LARQ Bottle Swig Top</h1>
+                                    <p>From $39</p>
+                                </div>
+                                <div class="home7-page">
+                                    <img src="/static/images/10.webp">
+                                    <h1>LARQ Bottle Flip Top Bottle</h1>
+                                    <p>From $39</p>
+                                </div>
+                                <div class="home9-page">
+                                    <img src="/static/images/11.webp">
+                                    <h1>LARQ Bottle Twist Top</h1>
+                                    <p>From $29</p>
+                                </div>
+                            </div>
+                        </ul>
+
+                    </li>
+                </ul>
+
+            </div>
+            <a class="navbar-brand" href="home.html">LARQ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="technology.html">TECHNOLOGY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><i class="fa fa-user-o"></i></a>
+                    </li>
+                    <div class="nav-item khani90">
+                        <!-- <a class="nav-link" id="farha2" aria-current="page"> -->
+                        <button type="button" class="btn btn-secondary mx-2" id="popcart" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                <i class="fa fa-cart-arrow-down">(<span id="cart">0</span>)</i>
+                        <!-- </button> -->
+                        </a>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div id="shopall-page" class="section-p8">
+        <h1>Shop all</h1>
+        <p>Discover a world of brilliant hydration</p>
+    </div>
+    <div id="shopall1-page" class="section-p7">
+        <div class="shopall2-page" onclick="window.location.href='#purification'">
+            <img src="/static/images/27.webp">
+            <h4>Purification</h4>
+        </div>
+        <div class="shopall2-page">
+            <img src="/static/images/28.webp" onclick="window.location.href='#home'">
+            <h4>Home</h4>
+        </div>
+        <div class="shopall2-page">
+            <img src="/static/images/29.webp" onclick="window.location.href='#drinkware'">
+            <h4>Drinkware</h4>
+        </div>
+        <div class="shopall2-page">
+            <img src="/static/images/30.webp" onclick="window.location.href='#hydrationsets'">
+            <h4>Hydration Sets</h4>
+        </div>
+
+    </div>
+
+
+    <div id="shopall3-page" class="section-p3">
+        <div class="shopall4-page">
+            <h1>Limited drop: LARQ x Nomatic</h1>
+            <p>The LARQ Bottle & Nomatic Sling is the necessary upgrade to your everyday carry.</p>
+            <a href="#"><button>Shop now</button></a>
+        </div>
+        <div class="shopall5-page">
+            <img src="/static/images/4.jpg">
+        </div>
+
+    </div>
+    <div id="purification"></div>
+    <div id="shopall6-page" class="section-p9">
+        <h1>Purification</h1>
+        <p>PureVis™ and Nano Zero Filter technology improve the quality of your water at home and on <br> the go.</p>
+        <div class="home23-page">
+            <div class="home24-page">
+                <img src='/media/{{product.0.image}}'>
+                <h6>SAVE $20.85 ON HYDRATION SET</h6>
+                <h2 id='namepr{{product.0.id}}'>{{product.0.product_name}}</h2>
+                <div class="home25-page">
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                </div>
+                <h4 id="categorypr{{product.0.id}}">{{product.0.category}}
+                    <spam id="subcategorypr{{product.0.id}}">{{product.0.subcategory}} </spam> <span id="suubcategorypr{{product.0.id}}"> {{product.0.suubcategory}} </span></h4>
+                <h5>$
+                    <spam id="pricepr{{product.0.id}}">{{product.0.price}}</spam> $ <span id="priceonepr{{product.0.id}}"> {{product.0.priceone}}</span></h5>
+                <span id="divpr{{product.0.id}}" class="divpr">
+                    <a><button class="cart" id="pr{{product.0.id}}">Add to Cart</button></a>
+                </span>
+            </div>
+
+            {% for i in product|slice:"1:3"%}
+            <div class="home24-page">
+                <img src="/media/{{i.image}}">
+                <h6>SAVE $20.85 ON HYDRATION SET</h6>
+                <h2 id="namepr{{i.id}}">{{i.product_name}}</h2>
+                <div class="home25-page">
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                </div>
+                <h4 id="categorypr{{i.id}}">{{i.category}}
+                    <spam id="subcategorypr{{i.id}}">{{i.subcategory}} </spam> <span id="suubcategorypr{{product.0.id}}">{{i.suubcategory}} </span> </h4>
+                <h5>$
+                    <spam id="pricepr{{i.price}}">{{i.price}}</spam> $ <span id="priceonepr{{i.id}}"> {{i.priceone}}</span></h5>
+                <span id="divpr{{i.id}}" class="divpr">
+                        <a><button class="cart" id="pr{{i.id}}">Add to Cart</button></a>
+                    </span> {% if forloop.counter|divisibleby:3 and forloop.counter > 0 and not forloop.last %}
+
+
+            </div>
+            <div class="home24-page">
+                {% endif %}
+            </div>
+            {% endfor %}
+
+
+        </div>
+    </div>
+
+
+    <div id="shopall7-page" class="section-p3">
+        <div class="shopall8-page">
+            <h5>Portable purification</h5>
+            <h1>Make refills a breeze</h1>
+            <p>PureVis™ and Nano Zero technology <br> improves water quality for a brilliant <br> hydration experience on the go.</p>
+        </div>
+        <div class="shopall9-page">
+            <img src="/static/images/35.webp">
+        </div>
+    </div>
+
+    <div id="shopall6-page" class="section-p9">
+        <h1>Bottle accessories</h1>
+        <p>Customize your bottle with smart add-ons and accessories to make hydrating on the go <br> even easier.</p>
+        <div class="home23-page">
+            <div class="home24-page">
+                <img src='/media/{{product.3.image}}'>
+                <h6>SAVE $20.85 ON HYDRATION SET</h6>
+                <h2 id='namepr{{product.3.id}}'>{{product.3.product_name}}</h2>
+                <div class="home25-page">
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                </div>
+                <h4 id="categorypr{{product.3.id}}">{{product.3.category}}
+                    <spam id="subcategorypr{{product.3.id}}">{{product.3.subcategory}} </spam> <span id="suubcategorypr{{product.3.id}}"> {{product.3.suubcategory}} </span></h4>
+                <h5>$
+                    <spam id="pricepr{{product.3.id}}">{{product.3.price}}</spam> $ <span id="priceonepr{{product.3.id}}"> {{product.3.priceone}}</span></h5>
+                <span id="divpr{{product.3.id}}" class="divpr">
+                    <a><button class="cart" id="pr{{product.3.id}}">Add to Cart</button></a>
+                </span>
+            </div>
+
+            {% for i in product|slice:"4:12"%}
+            <div class="home24-page">
+                <img src="/media/{{i.image}}">
+                <h6>SAVE $20.85 ON HYDRATION SET</h6>
+                <h2 id="namepr{{i.id}}">{{i.product_name}}</h2>
+                <div class="home25-page">
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                </div>
+                <h4 id="categorypr{{i.id}}">{{i.category}}
+                    <spam id="subcategorypr{{i.id}}">{{i.subcategory}} </spam> <span id="suubcategorypr{{product.0.id}}">{{i.suubcategory}} </span> </h4>
+                <h5>$
+                    <spam id="pricepr{{i.price}}">{{i.price}}</spam> $ <span id="priceonepr{{i.id}}"> {{i.priceone}}</span></h5>
+                <span id="divpr{{i.id}}" class="divpr">
+                        <a><button class="cart" id="pr{{i.id}}">Add to Cart</button></a>
+                    </span> {% if forloop.counter|divisibleby:12 and forloop.counter > 3 and not forloop.last %}
+
+
+            </div>
+            <div class="home24-page">
+                {% endif %}
+            </div>
+            {% endfor %}
+
+
+        </div>
+    </div>
+
+
+    <div id="home"></div>
+    <div id="shopall6-page" class="section-p9">
+        <h1>Home</h1>
+        <p>Go beyond filtration with a unique 2-step filtration and purification process for pure-tasting <br> water sip after sip.</p>
+        <div class="home23-page">
+            <div class="home24-page">
+                <img src='/media/{{product.12.image}}'>
+                <h6>SAVE $20.85 ON HYDRATION SET</h6>
+                <h2 id='namepr{{product.12.id}}'>{{product.12.product_name}}</h2>
+                <div class="home25-page">
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                </div>
+                <h4 id="categorypr{{product.12.id}}">{{product.12.category}}
+                    <spam id="subcategorypr{{product.12.id}}">{{product.12.subcategory}} </spam> <span id="suubcategorypr{{product.12.id}}"> {{product.12.suubcategory}} </span></h4>
+                <h5>$
+                    <spam id="pricepr{{product.12.id}}">{{product.12.price}}</spam> $ <span id="priceonepr{{product.12.id}}"> {{product.12.priceone}}</span></h5>
+                <span id="divpr{{product.12.id}}" class="divpr">
+                    <a><button class="cart" id="pr{{product.12.id}}">Add to Cart</button></a>
+                </span>
+            </div>
+
+            {% for i in product|slice:"13:15"%}
+            <div class="home24-page">
+                <img src="/media/{{i.image}}">
+                <h6>SAVE $20.85 ON HYDRATION SET</h6>
+                <h2 id="namepr{{i.id}}">{{i.product_name}}</h2>
+                <div class="home25-page">
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                </div>
+                <h4 id="categorypr{{i.id}}">{{i.category}}
+                    <spam id="subcategorypr{{i.id}}">{{i.subcategory}} </spam> <span id="suubcategorypr{{product.0.id}}">{{i.suubcategory}} </span> </h4>
+                <h5>$
+                    <spam id="pricepr{{i.price}}">{{i.price}}</spam> $ <span id="priceonepr{{i.id}}"> {{i.priceone}}</span></h5>
+                <span id="divpr{{i.id}}" class="divpr">
+                        <a><button class="cart" id="pr{{i.id}}">Add to Cart</button></a>
+                    </span> {% if forloop.counter|divisibleby:15 and forloop.counter > 12 and not forloop.last %}
+
+
+            </div>
+            <div class="home24-page">
+                {% endif %}
+            </div>
+            {% endfor %}
+
+
+        </div>
+    </div>
+
+
+    <div id="shopall7-page" class="section-p3">
+        <div class="shopall8-page">
+            <h5>At-home purification</h5>
+            <h1>Who said <br> practical had to <br> be boring?</h1>
+            <p>Nano Zero Filter technology delivers better-tasting<br> coffee, tea, smoothies—everything—and <br> looks good doing it.</p>
+        </div>
+        <div class="shopall9-page">
+            <img src="/static/images/48.webp">
+        </div>
+    </div>
+
+    <div id="shopall6-page" class="section-p9">
+        <h1>Filter replacements</h1>
+        <p>Our carbon-derived, plant-based filter gets rid of unwanted contaminants like lead, chlorine, <br> PFAS (PFOA/PFOS), HAA5, and more, leaving you with pure, crisp-tasting water.</p>
+        <div class="home23-page">
+            <div class="home24-page">
+                <img src='/media/{{product.15.image}}'>
+                <h6>SAVE $20.85 ON HYDRATION SET</h6>
+                <h2 id='namepr{{product.15.id}}'>{{product.15.product_name}}</h2>
+                <div class="home25-page">
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                </div>
+                <h4 id="categorypr{{product.15.id}}">{{product.15.category}}
+                    <spam id="subcategorypr{{product.15.id}}">{{product.15.subcategory}} </spam> <span id="suubcategorypr{{product.15.id}}"> {{product.15.suubcategory}} </span></h4>
+                <h5>$
+                    <spam id="pricepr{{product.15.id}}">{{product.15.price}}</spam> $ <span id="priceonepr{{product.15.id}}"> {{product.15.priceone}}</span></h5>
+                <span id="divpr{{product.15.id}}" class="divpr">
+                    <a><button class="cart" id="pr{{product.15.id}}">Add to Cart</button></a>
+                </span>
+            </div>
+
+            {% for i in product|slice:"16:18"%}
+            <div class="home24-page">
+                <img src="/media/{{i.image}}">
+                <h6>SAVE $20.85 ON HYDRATION SET</h6>
+                <h2 id="namepr{{i.id}}">{{i.product_name}}</h2>
+                <div class="home25-page">
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                </div>
+                <h4 id="categorypr{{i.id}}">{{i.category}}
+                    <spam id="subcategorypr{{i.id}}">{{i.subcategory}} </spam> <span id="suubcategorypr{{product.0.id}}">{{i.suubcategory}} </span> </h4>
+                <h5>$
+                    <spam id="pricepr{{i.price}}">{{i.price}}</spam> $ <span id="priceonepr{{i.id}}"> {{i.priceone}}</span></h5>
+                <span id="divpr{{i.id}}" class="divpr">
+                        <a><button class="cart" id="pr{{i.id}}">Add to Cart</button></a>
+                    </span> {% if forloop.counter|divisibleby:18 and forloop.counter > 15 and not forloop.last %}
+
+
+            </div>
+            <div class="home24-page">
+                {% endif %}
+            </div>
+            {% endfor %}
+
+
+        </div>
+    </div>
+
+
+    <div id="drinkware"></div>
+    <div id="shopall6-page" class="section-p9">
+        <h1>Drinkware</h1>
+        <p>Sip your hydration goals down with style and ease.
+        </p>
+        <div class="home23-page">
+            <div class="home24-page">
+                <img src='/media/{{product.18.image}}'>
+                <h6>SAVE $20.85 ON HYDRATION SET</h6>
+                <h2 id='namepr{{product.18.id}}'>{{product.18.product_name}}</h2>
+                <div class="home25-page">
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                </div>
+                <h4 id="categorypr{{product.18.id}}">{{product.18.category}}
+                    <spam id="subcategorypr{{product.18.id}}">{{product.18.subcategory}} </spam> <span id="suubcategorypr{{product.18.id}}"> {{product.18.suubcategory}} </span></h4>
+                <h5>$
+                    <spam id="pricepr{{product.18.id}}">{{product.18.price}}</spam> $ <span id="priceonepr{{product.18.id}}"> {{product.18.priceone}}</span></h5>
+                <span id="divpr{{product.18.id}}" class="divpr">
+                    <a><button class="cart" id="pr{{product.18.id}}">Add to Cart</button></a>
+                </span>
+            </div>
+
+            {% for i in product|slice:"19:21"%}
+            <div class="home24-page">
+                <img src="/media/{{i.image}}">
+                <h6>SAVE $20.85 ON HYDRATION SET</h6>
+                <h2 id="namepr{{i.id}}">{{i.product_name}}</h2>
+                <div class="home25-page">
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                </div>
+                <h4 id="categorypr{{i.id}}">{{i.category}}
+                    <spam id="subcategorypr{{i.id}}">{{i.subcategory}} </spam> <span id="suubcategorypr{{product.0.id}}">{{i.suubcategory}} </span> </h4>
+                <h5>$
+                    <spam id="pricepr{{i.price}}">{{i.price}}</spam> $ <span id="priceonepr{{i.id}}"> {{i.priceone}}</span></h5>
+                <span id="divpr{{i.id}}" class="divpr">
+                        <a><button class="cart" id="pr{{i.id}}">Add to Cart</button></a>
+                    </span> {% if forloop.counter|divisibleby:21 and forloop.counter > 18 and not forloop.last %}
+
+
+            </div>
+            <div class="home24-page">
+                {% endif %}
+            </div>
+            {% endfor %}
+
+
+        </div>
+    </div>
+
+    <div id="shopall7-page" class="section-p3">
+        <div class="shopall8-page">
+            <h5>On-the-go hydration</h5>
+            <h1>Hydration <br> never looked so <br> good</h1>
+            <p>Stylish and sustainable. We'll drink to that.
+            </p>
+        </div>
+        <div class="shopall9-page">
+            <img src="/static/images/55.webp">
+        </div>
+    </div>
+
+
+    <div id="shopall6-page" class="section-p9">
+        <h1>Bottle accessories</h1>
+        <p>Customize your bottle with smart add-ons and accessories to make hydrating on the go <br> even easier.</p>
+        <div class="home23-page">
+            <div class="home24-page">
+                <img src='/media/{{product.3.image}}'>
+                <h6>SAVE $20.85 ON HYDRATION SET</h6>
+                <h2 id='namepr{{product.3.id}}'>{{product.3.product_name}}</h2>
+                <div class="home25-page">
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                </div>
+                <h4 id="categorypr{{product.3.id}}">{{product.3.category}}
+                    <spam id="subcategorypr{{product.3.id}}">{{product.3.subcategory}} </spam> <span id="suubcategorypr{{product.3.id}}"> {{product.3.suubcategory}} </span></h4>
+                <h5>$
+                    <spam id="pricepr{{product.3.id}}">{{product.3.price}}</spam> $ <span id="priceonepr{{product.3.id}}"> {{product.3.priceone}}</span></h5>
+                <span id="divpr{{product.3.id}}" class="divpr">
+                    <a><button class="cart" id="pr{{product.3.id}}">Add to Cart</button></a>
+                </span>
+            </div>
+
+            {% for i in product|slice:"4:12"%}
+            <div class="home24-page">
+                <img src="/media/{{i.image}}">
+                <h6>SAVE $20.85 ON HYDRATION SET</h6>
+                <h2 id="namepr{{i.id}}">{{i.product_name}}</h2>
+                <div class="home25-page">
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                </div>
+                <h4 id="categorypr{{i.id}}">{{i.category}}
+                    <spam id="subcategorypr{{i.id}}">{{i.subcategory}} </spam> <span id="suubcategorypr{{product.0.id}}">{{i.suubcategory}} </span> </h4>
+                <h5>$
+                    <spam id="pricepr{{i.price}}">{{i.price}}</spam> $ <span id="priceonepr{{i.id}}"> {{i.priceone}}</span></h5>
+                <span id="divpr{{i.id}}" class="divpr">
+                        <a><button class="cart" id="pr{{i.id}}">Add to Cart</button></a>
+                    </span> {% if forloop.counter|divisibleby:12 and forloop.counter > 3 and not forloop.last %}
+
+
+            </div>
+            <div class="home24-page">
+                {% endif %}
+            </div>
+            {% endfor %}
+
+
+        </div>
+    </div>
+
+    <div id="hydrationsets"></div>
+    <div id="shopall6-page" class="section-p9">
+        <h1>Hydration sets</h1>
+        <p>PureVis™ and Nano Zero Filter technology improve the quality of your water at home and on <br> the go.
+        </p>
+        <div class="home23-page">
+            <div class="home24-page">
+                <img src='/media/{{product.21.image}}'>
+                <h6>SAVE $20.85 ON HYDRATION SET</h6>
+                <h2 id='namepr{{product.21.id}}'>{{product.21.product_name}}</h2>
+                <div class="home25-page">
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                </div>
+                <h4 id="categorypr{{product.21.id}}">{{product.21.category}}
+                    <spam id="subcategorypr{{product.21.id}}">{{product.21.subcategory}} </spam> <span id="suubcategorypr{{product.21.id}}"> {{product.21.suubcategory}} </span></h4>
+                <h5>$
+                    <spam id="pricepr{{product.21.id}}">{{product.21.price}}</spam> $ <span id="priceonepr{{product.21.id}}"> {{product.21.priceone}}</span></h5>
+                <span id="divpr{{product.21.id}}" class="divpr">
+                    <a><button class="cart" id="pr{{product.21.id}}">Add to Cart</button></a>
+                </span>
+            </div>
+
+            {% for i in product|slice:"22:24"%}
+            <div class="home24-page">
+                <img src="/media/{{i.image}}">
+                <h6>SAVE $20.85 ON HYDRATION SET</h6>
+                <h2 id="namepr{{i.id}}">{{i.product_name}}</h2>
+                <div class="home25-page">
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                    <i class="	fa fa-star"></i>
+                </div>
+                <h4 id="categorypr{{i.id}}">{{i.category}}
+                    <spam id="subcategorypr{{i.id}}">{{i.subcategory}} </spam> <span id="suubcategorypr{{product.0.id}}">{{i.suubcategory}} </span> </h4>
+                <h5>$
+                    <spam id="pricepr{{i.price}}">{{i.price}}</spam> $ <span id="priceonepr{{i.id}}"> {{i.priceone}}</span></h5>
+                <span id="divpr{{i.id}}" class="divpr">
+                        <a><button class="cart" id="pr{{i.id}}">Add to Cart</button></a>
+                    </span> {% if forloop.counter|divisibleby:24 and forloop.counter > 21 and not forloop.last %}
+
+
+            </div>
+            <div class="home24-page">
+                {% endif %}
+            </div>
+            {% endfor %}
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="home33-page" class="section-p7">
+        <div class="home34-page">
+            <h1>Become an insider</h1>
+            <p>Receive exclusive offers, hydration news, and more when you subscribe.</p>
+            <div class="home35-page">
+                <form action="home.html" method="POST">
+                    {% csrf_token%}
+                    <input type="email" id="email" name="email" placeholder="Email Adress">
+                    <button type="submit" value="submit" onclick="openPopup()">Submit</button>
+                </form>
+            </div>
+            <div class="home36-page ">
+                <a href="https://www.facebook.com/livelarq/"><i class="fa fa-facebook "></i></a>
+                <a href="https://www.instagram.com/livelarq/"><i class=" fa fa-instagram "></i></a>
+                <a href="https://www.youtube.com/@stylewithuzma4"><i class=" fa fa-youtube-play "></i></a>
+                <a href="https://twitter.com/livelarq?lang=en"><i class=" fa fa-twitter "></i></a>
+            </div>
+
+        </div>
+        <div class="home38-page ">
+            <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="allreviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="retailer.html">Find a retailer</a></li>
+                <li><a href="corporate.html">Corporate gifting</a></li>
+            </ul>
+        </div>
+        <div class="home38-page ">
+            <ul>
+                <li><a href="https://basq.livelarq.com/">basq magazine</a></li>
+                <li><a href="press.html">Press</a></li>
+                <li><a href="ourstory.html">Our story</a></li>
+                <li><a href="affilite.html">Affiliate program</a></li>
+                <li><a href="larq.html">Ambassador program</a></li>
+            </ul>
+        </div>
+        <div class="home39-page ">
+            <img src="/static/images/1.gif ">
+        </div>
+    </div>
+
+    {% if messages %}
+    <div class="{{ message.tags }} " class="home1" id="popup" role="alert">
+        {% for message in messages %}
+        <img src="/static/images/All Product Images/108.PNG" class="awaiskhan3">
+        <h1 class="awaiskhan1">{{ message }}</h1>
+        <h5 class="awaiskhan2">You details has been successfully<br> submitted. Thanks! </h5>
+        <button type="button" id="okButton" onclick="closePopup()">OK</button> {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="home37-page " class="section-p7">
+        <a href="# "><button class="husi "><img src="/static/images/1.svg"><spam>United State</spam></button></a>
+        <a href="# "><button class="husi1 ">
+            Terms & Privacy</button></a>
+        <a href=""><button class="husi1 ">Accessibility</button></a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
+
+
+
+    <script>
+        let popup = document.getElementById("popup");
+
+
+        function openPopup() {
+            popup.classList.add("open-popup");
+            console.log(popup)
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var okButton = document.getElementById("okButton");
+            var popup = document.getElementById("popup");
+
+            if (okButton && popup) {
+                okButton.addEventListener("click", function() {
+                    popup.style.display = "none"; // Hide the popup
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

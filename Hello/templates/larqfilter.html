@@ -1,0 +1,1070 @@
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaterWare.Com Site In Awais Qamar</title>
+    <link rel="stylesheet" href="{% static 'css/cssawais21.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Delicious+Handrawn&display=swap" rel="stylesheet">
+</head>
+<style>
+    .khani90 #popcart {
+        background-color: white;
+        color: black;
+        border: none;
+        font-size: 23px;
+    }
+    
+    #price {
+        color: #153a5b;
+        font-size: 30px;
+        font-weight: 800;
+    }
+    
+    #checkout {
+        background-color: #153a5b;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 600;
+        color: white;
+    }
+    
+    #checkout:hover {
+        background-color: #2a4761;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 600;
+        color: white;
+    }
+    
+    #clearCart {
+        background-color: #153a5b;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 600;
+        color: white;
+    }
+    
+    #clearCart:hover {
+        background-color: #2a4761;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 600;
+        color: white;
+    }
+    
+    .minus {
+        background-color: #153a5b;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 600;
+        color: white;
+        margin-top: 20px;
+        padding: 10px 20px;
+    }
+    
+    .minus:hover {
+        background-color: #2a4761;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 600;
+        color: white;
+    }
+    
+    .plus {
+        background-color: #153a5b;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 600;
+        color: white;
+        margin-top: 20px;
+        padding: 10px 20px;
+    }
+    
+    .plus:hover {
+        background-color: #2a4761;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 600;
+        color: white;
+    }
+    
+    .nano1 {
+        margin-top: 20px;
+        font-size: 40px;
+    }
+</style>
+
+<style>
+    #popup {
+        width: 28%;
+        text-align: center;
+        position: relative;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: 37%;
+        margin-top: 10px;
+        background-color: white;
+        border-radius: 20px;
+        top: -1147%;
+    }
+    
+    #popup img {
+        width: 95px;
+        height: 95px;
+        border-radius: 50%;
+        text-align: center;
+        justify-content: center;
+        margin-left: 135px;
+        margin-top: -50px;
+    }
+    
+    #popup h1 {
+        color: black;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: 'Times New Roman', Times, serif;
+        padding-top: 40px;
+    }
+    
+    #popup h5 {
+        color: black;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: cursive;
+        padding: 30px;
+        padding-top: 20px;
+    }
+    
+    #popup button {
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px 0px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(0, 255, 0);
+        color: white;
+        font-size: 20px;
+        font-weight: 900;
+        font-family: cursive;
+        cursor: pointer;
+        width: 50%;
+        margin-left: 93px;
+        margin-bottom: 30px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-white fixed-top py-3">
+
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav khan">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="shopall.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span onclick="window.location.href='shopall.html'">SHOP ALL</span>
+                        </a>
+                        <ul class="dropdown-menu khan1">
+                            <div class="home5-page">
+                                <div class="home-page">
+                                    <a href="shopall.html"><button class="anas">Explore All</button></a>
+                                    <a href="hydrations.html"><button class="anasone">Hydration Set</button></a>
+                                    <li><a class="dropdown-item anas3" href="accessries.html">Filters & Accessories</a></li>
+                                    <li><a class="dropdown-item anas4" href="corporate.html">Corporate gifting</a></li>
+                                    <div class="home1-page">
+                                        <h6>Learn More</h6>
+                                        <li><a class="dropdown-item anas5" href="purevis.html">PureVis™ technology</a></li>
+                                        <li><a class="dropdown-item anas6" href="nanozero.html">Nano Zero technology</a></li>
+                                    </div>
+                                </div>
+                                <div class="home2-page">
+                                    <img src="/static/images/1.webp">
+                                    <h1>Purifaction</h1>
+                                    <p>Filter or Prufi water on the go</p>
+                                </div>
+                                <div class="home3-page">
+                                    <img src="/static/images/2.webp">
+                                    <h1>Home</h1>
+                                    <p>Equipe your home with Nano Zero technology</p>
+                                </div>
+                                <div class="home4-page">
+                                    <img src="/static/images/3.webp">
+                                    <h1>Drinkware</h1>
+                                    <p>Hydrate Effortlessy on the go</p>
+                                </div>
+                            </div>
+                        </ul>
+
+                    </li>
+                </ul>
+                <ul class="navbar-nav hassan">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="purification.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span onclick="window.location.href='purification.html'">PURIFICATION</span>
+                        </a>
+                        <ul class="dropdown-menu hassan1">
+                            <div class="home5-page">
+                                <div class="home-page">
+                                    <a href="exploreall.html"><button class="anas">Explore All</button></a>
+                                    <a href="hydrations.html"><button class="anasone">Hydration Set</button></a>
+                                    <li><a class="dropdown-item anas3" href="accessries.html">Filters & Accessories</a></li>
+                                    <li><a class="dropdown-item anas4" href="corporate.html">Corporate gifting</a></li>
+                                    <div class="home1-page">
+                                        <h6>Learn More</h6>
+                                        <li><a class="dropdown-item anas5" href="purevis.html">PureVis™ technology</a></li>
+                                        <li><a class="dropdown-item anas6" href="nanozero.html">Nano Zero technology</a></li>
+                                    </div>
+                                </div>
+                                <div class="home6-page">
+                                    <img src="/static/images/4.webp">
+                                    <h1>LARQ Bottle PureVis™</h1>
+                                    <p>From $99</p>
+                                </div>
+                                <div class="home7-page">
+                                    <img src="/static/images/5.webp">
+                                    <h1>LARQ Bottle Movement PureVis™</h1>
+                                    <p>From 89</p>
+                                </div>
+                                <div class="home9-page">
+                                    <img src="/static/images/6.webp">
+                                    <h1>LARQ Bottle Filtered</h1>
+                                    <p>From $49.95</p>
+                                </div>
+                            </div>
+                        </ul>
+
+                    </li>
+                </ul>
+                <ul class="navbar-nav hassan">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="homeone.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span onclick="window.location.href='homeone.html'">HOME</span>
+                        </a>
+                        <ul class="dropdown-menu hassan2">
+                            <div class="home5-page">
+                                <div class="home-page">
+                                    <a href="exploreall.html"><button class="anas">Explore All</button></a>
+                                    <a href="hydrations.html"><button class="anasone">Hydration Set</button></a>
+                                    <li><a class="dropdown-item anas3" href="accessries.html">Filters & Accessories</a></li>
+                                    <li><a class="dropdown-item anas4" href="corporate.html">Corporate gifting</a></li>
+                                    <div class="home1-page">
+                                        <h6>Learn More</h6>
+                                        <li><a class="dropdown-item anas5" href="purevis.html">PureVis™ technology</a></li>
+                                        <li><a class="dropdown-item anas6" href="nanozero.html">Nano Zero technology</a></li>
+                                    </div>
+                                </div>
+                                <div class="home6-page">
+                                    <img src="/static/images/7.webp">
+                                    <h1>LARQ Pitcher PureVis™</h1>
+                                    <p>From $139.00</p>
+                                </div>
+                                <div class="home7-page">
+                                    <img src="/static/images/8.webp">
+                                    <h1>LARQ Pitcher PureVis Pitcher</h1>
+                                    <p>From $79</p>
+                                </div>
+                                <div class="home9-page">
+                                    <img src="/static/images/8.webp">
+                                    <h1>LARQ Pitcher PureVis™</h1>
+                                    <p>From $139.95</p>
+                                </div>
+                            </div>
+                        </ul>
+
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav hassan">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="drinkware.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span onclick="window.location.href='drinkware.html'">DRINKWARE</span>
+                        </a>
+                        <ul class="dropdown-menu hassan3">
+                            <div class="home5-page">
+                                <div class="home-page">
+                                    <a href="exploreall.html"><button class="anas">Explore All</button></a>
+                                    <a href="hydrations.html"><button class="anasone">Hydration Set</button></a>
+                                    <li><a class="dropdown-item anas3" href="accessries.html">Filters & Accessories</a></li>
+                                    <li><a class="dropdown-item anas4" href="corporate.html">Corporate gifting</a></li>
+                                    <div class="home1-page">
+                                        <h6>Learn More</h6>
+                                        <li><a class="dropdown-item anas5" href="purevis.html">PureVis™ technology</a></li>
+                                        <li><a class="dropdown-item anas6" href="nanozero.html">Nano Zero technology</a></li>
+                                    </div>
+                                </div>
+                                <div class="home6-page">
+                                    <img src="/static/images/9.webp">
+                                    <h1>LARQ Bottle Swig Top</h1>
+                                    <p>From $39</p>
+                                </div>
+                                <div class="home7-page">
+                                    <img src="/static/images/10.webp">
+                                    <h1>LARQ Bottle Flip Top Bottle</h1>
+                                    <p>From $39</p>
+                                </div>
+                                <div class="home9-page">
+                                    <img src="/static/images/11.webp">
+                                    <h1>LARQ Bottle Twist Top</h1>
+                                    <p>From $29</p>
+                                </div>
+                            </div>
+                        </ul>
+
+                    </li>
+                </ul>
+
+            </div>
+            <a class="navbar-brand" href="home.html">LARQ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="technology.html">TECHNOLOGY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><i class="fa fa-user-o"></i></a>
+                    </li>
+
+                    <div class="nav-item khani90">
+                        <!-- <a class="nav-link" id="farha2" aria-current="page"> -->
+                        <button type="button" class="btn btn-secondary mx-2" id="popcart" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                <i class="fa fa-cart-arrow-down">(<span id="cart">0</span>)</i>
+                        <!-- </button> -->
+                        </a>
+                    </div>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link"><i class="fa fa-cart-arrow-down">(<span id="cart">0</span>)</i></a>
+                    </li> -->
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="swing-page" class="section-p3">
+        <div class="swing1-page">
+            <img src="/static/images/End product images start too end/6.webp" class="swing13">
+            <div class="swing2-page">
+                <div class="swing3-page">
+                    <img src="/static/images/All Product Images/3.PNG">
+                    <h4>24 hours cold </h4>
+                </div>
+                <div class="swing3-page">
+                    <img src="/static/images/All Product Images/4.PNG">
+                    <h4>Made with food-grade <br> 18/8 stainless steel
+                    </h4>
+                </div>
+                <div class="swing3-page">
+                    <img src="/static/images/All Product Images/5.PNG">
+                    <h4>BPA-free
+                    </h4>
+                </div>
+
+            </div>
+            <div class="swing4-page">
+                <img src="/static/images/All Product Images/100.PNG">
+                <img src="/static/images/All Product Images/101.PNG">
+            </div>
+            <div class="swing4-page">
+                <img src="/static/images/All Product Images/102.PNG">
+                <img src="/static/images/All Product Images/103.PNG">
+            </div>
+            <div class="swing4-page">
+                <img src="/static/images/All Product Images/104.PNG">
+            </div>
+        </div>
+        <div class="swing5-page">
+            <h6> Shop >
+                <spam>Hydrations Sets</spam>
+            </h6>
+            <h1 id='namepr5{{product.0.id}}'>LARQ Bottle Filtered</h1>
+            <div class="swing6-page">
+                <h2> $ <span id="pricepr5{{product.0.id}}">49.00</span>
+                    <spam>$58</spam>
+                </h2>
+                <button class="swing2">25% OFF</button>
+            </div>
+            <div class="swing7-page">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-empty"></i>
+                <h4>50+ reviews</h4>
+            </div>
+
+            <h5>Size</h5>
+            <div class="swing8-page">
+                <button class="swing3">17 oz</button>
+                <button class="swing4">25 oz</button>
+            </div>
+            <span id="divpr5{{product.0.id}}" class="divpr5">
+            <button class="cart" id="pr5{{product.0.id}}">Add to Cart</button>
+        </span>
+            <div class="swing9-page">
+                <p>Or 4 interest-free installments of $27.75</p>
+                <p>Free shipping within the contiguous pakistan on orders over $80.</p>
+            </div>
+            <p>Be a hydro homie and gift these to your friends (or keep them to yourself). LARQ Bottle Swig Top is perfect for large capacity drinking on the go. Its wide-mouth design is an ice-lover's dream.</p>
+            <h5>Warranty</h5>
+            <p>We offer a 1-year limited warranty to repair or replace any defective material or component. It does not cover any issues due to normal wear and tear, misuse or loss / theft of the product.</p>
+
+        </div>
+    </div>
+
+    <div id="swing10-page" class="section-p9">
+        <h1>What's included</h1>
+        <div class="swing11-page">
+            <div class="swing12-page">
+                <img src="/static/images/All Product Images/106.webp">
+                <h6>Bottle Filter
+
+                </h6>
+                <h5>1 x Obsidian Black</h5>
+            </div>
+            <div class="swing12-page">
+                <img src="/static/images/All Product Images/107.webp">
+                <h6>LARQ Bottle PureVis™ Cap
+
+                </h6>
+                <h5>LARQ Bottle Filtered Cap
+                </h5>
+            </div>
+            <div class="swing12-page">
+                <img src="/static/images/All Product Images/108.webp">
+                <h6>Native Union x LARQ Bottle Sling
+                </h6>
+                <h5>1 x Filter Straw</h5>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="tec11-page" class="section-p3">
+        <h1>01<span>Performance</span></h1>
+        <div class="tec12-page">
+            <div class="tec13-page">
+                <a><button id="sajad">LARQ Pitcher PureVis™</button></a>
+                <a><button id="saja">LARQ Bottle Filtered</button></a>
+                <h2>Lab-tested and proven</h2>
+                <p>Here's a look at our third-party <br> lab testing across a range <br> of contaminants.</p>
+                <div class="tec14-page">
+                    <a><button id="saj">Chlorine</button></a>
+                    <a><button id="sa">Lead</button></a>
+                    <a><button id="sajj">PFAS</button></a>
+                </div>
+                <a href=""><button id="sajjj">View full report</button></a>
+            </div>
+
+            <div class="tec15-page">
+                <img src="/static/images/Capture.PNG" id="sajjjj">
+                <img src="/static/images/60.webp" id="sajjjj1">
+            </div>
+        </div>
+    </div>
+
+    <div id="swing13-page" class="section-p3">
+        <div class="swing14-page">
+            <div class="swing15-page">
+                <h1>Swig, sip, chug
+                </h1>
+                <p>Snap-close leak-free cap designed for swigs <br> of H₂O on the go.</p>
+            </div>
+            <div class="swing16-page">
+                <img src="/static/images/All Product Images/15.jpg">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="swing13-page" class="section-p3">
+        <div class="swing14-page">
+            <div class="swing16-page">
+                <img src="/static/images/All Product Images/10.webp">
+            </div>
+            <div class="swing15-page swing10">
+                <h1>Comfort-grip handle
+
+                </h1>
+                <p>A built-in, soft-touch handle for life on the <br> move.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="swing13-page" class="section-p3">
+        <div class="swing14-page">
+            <div class="swing15-page">
+                <h1>Wide-mouth bottle
+                </h1>
+                <p>Ice-friendly opening is perfect for ice <br> nuggets and large cubes alike.</p>
+            </div>
+            <div class="swing16-page">
+                <img src="/static/images/All Product Images/11.webp">
+            </div>
+        </div>
+    </div>
+
+    <div id="tec36-page" class="section-p3">
+        <h1>Just the FAQs</h1>
+        <div class="tec37-page">
+            <div class="tec41-page">
+                <div class="tec39-page">
+                    <h5>What's in the box?</h5>
+                    <i class="fa fa-plus toggle-icon" id="Alikhan"></i>
+                    <i class="fa fa-minus toggle-icon" id="Alikhan1" style="display: none;"></i>
+                </div>
+                <div class="tec40-page" id="Alikhan3" style="display: none;">
+                    <h5>LARQ Bottle PureVis™ is easy to use. Fill up anywhere The LARQ Bottle PureVis™ gives you the power to take brilliantly clean water with you everywhere you go. Press the cap for PureVis™ While you wait, give the bottle a gentle shake
+                        or do your best water dance to spread the PureVis™ light evenly. And voila! Enjoy brilliantly clean water from a clean bottle. It's that simple.</h5>
+                </div>
+            </div>
+            <div class="tec41-page">
+                <div class="tec39-page">
+                    <h5>How to use LARQ Bottle PureVis™?</h5>
+                    <i class="fa fa-plus toggle-icon" id="Alikhan"></i>
+                    <i class="fa fa-minus toggle-icon" id="Alikhan1" style="display: none;"></i>
+                </div>
+                <div class="tec40-page" id="Alikhan3" style="display: none;">
+                    <h5>LARQ Bottle PureVis™ is easy to use. Fill up anywhere The LARQ Bottle PureVis™ gives you the power to take brilliantly clean water with you everywhere you go. Press the cap for PureVis™ While you wait, give the bottle a gentle shake
+                        or do your best water dance to spread the PureVis™ light evenly. And voila! Enjoy brilliantly clean water from a clean bottle. It's that simple.</h5>
+                </div>
+            </div>
+            <div class="tec41-page">
+                <div class="tec39-page">
+                    <h5>Are LARQ Bottles BPA free?</h5>
+                    <i class="fa fa-plus toggle-icon" id="Alikhan"></i>
+                    <i class="fa fa-minus toggle-icon" id="Alikhan1" style="display: none;"></i>
+                </div>
+                <div class="tec40-page" id="Alikhan3" style="display: none;">
+                    <h5>Yes, LARQ Bottles are BPA free.</h5>
+                </div>
+            </div>
+
+            <div class="tec41-page">
+                <div class="tec39-page">
+                    <h5>Is the LARQ Bottle Swig Top dishwasher safe?</h5>
+                    <i class="fa fa-plus toggle-icon" id="Alikhan"></i>
+                    <i class="fa fa-minus toggle-icon" id="Alikhan1" style="display: none;"></i>
+                </div>
+                <div class="tec40-page" id="Alikhan3" style="display: none;">
+                    <h5>You can put the LARQ Bottle in the dishwasher (the cap should go on the top rack). However, we recommend hand washing it with warm water and soap for optimal product care.</h5>
+                </div>
+            </div>
+
+            <div class="tec41-page">
+                <div class="tec39-page">
+                    <h5> Can I use it for hot or cold water?</h5>
+                    <i class="fa fa-plus toggle-icon" id="Alikhan"></i>
+                    <i class="fa fa-minus toggle-icon" id="Alikhan1" style="display: none;"></i>
+                </div>
+                <div class="tec40-page toggle-icon" id="Alikhan3" style="display: none;">
+                    <h5>LARQ Bottle Swig Top is for use with cold or room temperature water only. It can keep water cold for up to 24 hours. We’d suggest the LARQ Bottle Twist Top for both hot or cold features.</h5>
+                </div>
+            </div>
+
+            <div class="tec41-page">
+                <div class="tec39-page">
+                    <h5> How does the LARQ Filter Straw work?</h5>
+                    <i class="fa fa-plus toggle-icon" id="Alikhan"></i>
+                    <i class="fa fa-minus toggle-icon" id="Alikhan1" style="display: none;"></i>
+                </div>
+                <div class="tec40-page toggle-icon" id="Alikhan3" style="display: none;">
+                    <h5>The LARQ Filter Straw is a portable water filtration system that combines a high performance Nano Zero filter technology with a seamless, low-pressure drinking experience. As you sip through the straw, our Nano Zero filter removes
+                        a range of contaminants like chlorine, lead, heavy metals, mercury, cadmium, particulates and more. (Filters are tested to NSF / ANSI 42 and 53 standards by 3rd party labs). 1 LARQ Bottle Filter replaces 300 single-use water bottles!</h5>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="swing20-page" class="section-p3">
+        <h1>Technical specifications
+        </h1>
+        <div class="swing21-page">
+            <div class="swing22-page">
+                <img src="/static/images/All Product Images/96.webp">
+            </div>
+            <div class="swing24-page">
+                <div class="swing23-page">
+                    <h3>Volume</h3>
+                    <h5>14.5 oz / 22.5 oz
+                    </h5>
+                </div>
+                <div class="swing23-page">
+                    <h3>Weight</h3>
+                    <h5>440 gm / 550 gm
+
+                    </h5>
+                </div>
+                <div class="swing23-page">
+                    <h3>Height</h3>
+                    <h5>10" / 11"
+
+                    </h5>
+                </div>
+                <div class="swing23-page">
+                    <h3>Diameter
+                    </h3>
+                    <h5>2.7" / 3"
+
+                    </h5>
+                </div>
+                <div class="swing23-page">
+                    <h3>Material</h3>
+                    <h5>Nano Zero Filter <br> Double wall
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="swing25-page" class="section-p3">
+        <h1>Inspirational design</h1>
+        <p>Who said practical had to be boring?
+        </p>
+        <div class="swing26-page">
+            <div class="swing27-page">
+                <img src="/static/images/All Product Images/19.webp">
+            </div>
+            <div class="swing28-page">
+                <div class="swing29-page">
+                    <img src="/static/images/All Product Images/14.webp">
+                </div>
+                <div class="swing29-page">
+                    <img src="/static/images/All Product Images/15.jpg">
+                </div>
+                <div class="swing29-page">
+                    <img src="/static/images/All Product Images/16.jpg">
+                </div>
+                <div class="swing29-page">
+                    <img src="/static/images/All Product Images/112.webp">
+                </div>
+                <div class="swing29-page">
+                    <img src="/static/images/All Product Images/110.webp">
+                </div>
+                <div class="swing29-page">
+                    <img src="/static/images/All Product Images/111.webp">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="home33-page" class="section-p7">
+        <div class="home34-page">
+            <h1>Become an insider</h1>
+            <p>Receive exclusive offers, hydration news, and more when you subscribe.</p>
+            <div class="home35-page">
+                <form action="home.html" method="POST">
+                    {% csrf_token%}
+                    <input type="email" id="email" name="email" placeholder="Email Adress">
+                    <button type="submit" value="submit" onclick="openPopup()">Submit</button>
+                </form>
+            </div>
+            <div class="home36-page ">
+                <a href="https://www.facebook.com/livelarq/"><i class="fa fa-facebook "></i></a>
+                <a href="https://www.instagram.com/livelarq/"><i class=" fa fa-instagram "></i></a>
+                <a href="https://www.youtube.com/@stylewithuzma4"><i class=" fa fa-youtube-play "></i></a>
+                <a href="https://twitter.com/livelarq?lang=en"><i class=" fa fa-twitter "></i></a>
+            </div>
+
+        </div>
+        <div class="home38-page ">
+            <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="allreviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="retailer.html">Find a retailer</a></li>
+                <li><a href="corporate.html">Corporate gifting</a></li>
+            </ul>
+        </div>
+        <div class="home38-page ">
+            <ul>
+                <li><a href="https://basq.livelarq.com/">basq magazine</a></li>
+                <li><a href="press.html">Press</a></li>
+                <li><a href="ourstory.html">Our story</a></li>
+                <li><a href="affilite.html">Affiliate program</a></li>
+                <li><a href="larq.html">Ambassador program</a></li>
+            </ul>
+        </div>
+        <div class="home39-page ">
+            <img src="/static/images/1.gif ">
+        </div>
+    </div>
+
+    {% if messages %}
+    <div class="{{ message.tags }} " class="home1" id="popup" role="alert">
+        {% for message in messages %}
+        <img src="/static/images/All Product Images/108.PNG" class="awaiskhan3">
+        <h1 class="awaiskhan1">{{ message }}</h1>
+        <h5 class="awaiskhan2">You details has been successfully<br> submitted. Thanks! </h5>
+        <button type="button" id="okButton" onclick="closePopup()">OK</button> {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="home37-page " class="section-p7">
+        <a href="# "><button class="husi "><img src="/static/images/1.svg"><spam>United State</spam></button></a>
+        <a href="# "><button class="husi1 ">
+            Terms & Privacy</button></a>
+        <a href=""><button class="husi1 ">Accessibility</button></a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
+
+
+
+
+    <script>
+        // Find out the cart items from localsyorage
+        if (localStorage.getItem('cart') == null) {
+            var cart = {};
+        } else {
+            cart = JSON.parse(localStorage.getItem('cart'));
+            document.getElementById('cart').innerHTML = Object.keys(cart).length;
+            document.getElementById('cart').innerHTML = Object.values(cart).reduce((previous, current) => previous + current, 0)
+            updateCart(cart);
+            // updateCart1(cart);
+        }
+        // if the add too cart the button is clicked , add/increment the items
+        // $('.cart').click(function() {
+        $('.divpr5').on('click', 'button.cart', function() {
+            var idstr = this.id.toString();
+            console.log(idstr);
+            if (cart[idstr] != undefined) {
+                qty = cart[idstr][0] + 1;
+            } else {
+                qty = 1;
+                var nameElement = document.getElementById('name' + idstr);
+                if (nameElement) {
+                    name = nameElement.innerHTML;
+                } else {
+                    // handle the case where the element doesn't exist
+                }
+                var priceElement = document.getElementById('price' + idstr);
+                if (priceElement) {
+                    price = priceElement.innerHTML;
+                    console.log(price);
+                } else {
+                    // handle the case where the element doesn't exist
+                }
+
+                var imageElement = document.querySelector('.swing13');
+
+
+                if (imageElement) {
+                    image = imageElement.getAttribute('src');
+                    console.log(image);
+                } else {
+                    // handle the case where the element doesn't exist
+                }
+                cart[idstr] = [qty, name, parseInt(price), image];
+            }
+            localStorage.setItem('cart', JSON.stringify(cart));
+            document.getElementById('cart').innerHTML = Object.keys(cart).length;
+            document.getElementById('cart').innerHTML = Object.values(cart).reduce((previous, current) => previous + current, 0)
+            updateCart(cart);
+            updateCart5(cart);
+            updatePopover(cart);
+        });
+
+        $(document).ready(function() {
+            $('#popcart').popover({
+                // content: ' <p> Cart </p>',
+                // html: true,
+                // placement: 'bottom'
+            });
+
+        });
+
+        $(document).ready(function() {
+            // make sure #popcart exists before trying to update it
+            if ($('#popcart').length) {
+                updatePopover(cart);
+            }
+        });
+
+        updatePopover(cart);
+
+
+        function updatePopover(cart) {
+            var popStr1 = "<h5 class='awais300'> Your cart </h5><div>";
+            var popStr2 = "<h4 class='awais301'> You're $51.00 away from $10 in store credit!";
+            var popStr3 = "<h4 class='awais302'> Select Free Standard Shipping in Checkout.";
+            var popStr = "<h4> Cart for your items in my shopping cart </h4><div class='mx-2 my-2 awais303'>";
+            var i = 1;
+            var totalAmount = 0; // Initialize total amount counter
+            for (var item in cart) {
+                popStr += "<b>" + i + "</b>. ";
+                var nameElement = document.getElementById('name' + item);
+                var priceElement = document.getElementById('price' + item); // Assuming the price ID follows the same pattern
+                var image = cart[item][1]; // Assuming the image URL is stored at index 3 of the cart item array
+                var imageElement = document.querySelector('.swing13'); // Attempt to select the image element
+                if (nameElement && priceElement && image && imageElement) {
+                    popStr += "<img src='/static/images/End product images start too end/6.webp'" + image + "' alt='Product Image' style='width: 100px; height: auto;'> "; // Adding image
+                    var quantity = cart[item][0];
+                    var price = parseFloat(cart[item][2]); // Parse price as float
+                    var totalPriceForItem = quantity * price; // Calculate total price for this item
+                    totalAmount += totalPriceForItem; // Add this item's total price to the total amount
+                    popStr += nameElement.innerHTML.slice(0, 19) + " ...Product Qty: " + quantity + ", Price: $ " + totalPriceForItem.toFixed(2) + '<br>'; // Adding name and total price
+                } else {
+                    console.error('Failed to retrieve necessary elements or image.'); // Log an error if any element or image is missing
+                }
+                i++;
+            }
+            popStr += "</div> <a href='checkout.html'><button class='btn nano' id ='checkout'>Checkout</button></a> <button class='btn nono' onclick='clearCart()' id ='clearCart'>Clear Cart</button>";
+            var $j = jQuery.noConflict();
+            $j('#popcart').attr('data-content', popStr1 + popStr2 + popStr3 + popStr + "</div>");
+            $(document).ready(function() {
+                $('#popcart').popover('show');
+            });
+        }
+
+
+
+        function clearCart() {
+            // console.log(cabrt)
+            cart = JSON.parse(localStorage.getItem('cart'));
+            for (var item in cart) {
+                var element = document.getElementById('div' + item);
+                if (element !== null) {
+                    element.innerHTML = '<a><button class="cart" id="' + item + '">Add to cart</button></a>';
+                } else {
+                    // console.log("Element with ID 'div" + item + "' not found.");
+                }
+            }
+            localStorage.clear()
+            cart = {};
+            updateCart(cart);
+            updateCart5(cart);
+
+            // updateCart1(cart);
+        }
+
+        function updateCart(cart) {
+            // console.log(cart)
+            var sum = 0;
+            for (var item in cart) {
+                sum = sum + cart[item][0];
+                var element = document.getElementById('div' + item);
+                if (element !== null) {
+                    element.innerHTML = "<button id='minus" + item + "' class='btn  minus'>-</button> <span id='val" + item + "''>" + cart[item][0] + "</span> <button id='plus" + item + "' class='btn  plus'> + </button>";
+                } else {
+                    // console.log("Element with ID 'div" + item + "' not found.");
+                }
+            }
+            document.getElementById('cart').innerHTML = sum;
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updatePopover(cart);
+        }
+
+        function updateCart5(cart) {
+            // console.log(cart)
+            var sum = 0
+            for (var item in cart) {
+                sum = sum + cart[item][0];
+                var element = document.getElementById('divpr5' + item);
+                if (element !== null) {
+                    element.innerHTML = "<button id='minus" + item + "' class='btn btn-primary minus'>-</button> <span id='val" + item + "''>" + cart[item][0] + "</span> <button id='plus" + item + "' class='btn btn-primary plus'> + </button>";
+                } else {
+                    // console.log("Element with ID 'div" + item + "' not found.");
+                }
+            }
+            document.getElementById('cart').innerHTML = sum;
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updatePopover(cart);
+        }
+
+
+        $('.divpr5').on("click", "button.minus", function() {
+
+            // console.log("minus clicked");
+            a = this.id.slice(7, );
+            cart['pr' + a][0] = cart['pr' + a][0] - 1;
+            cart['pr' + a][0] = Math.max(0, cart['pr' + a][0]);
+            document.getElementById('valpr' + a).innerHTML = cart['pr' + a][0];
+            updateCart(cart);
+            updateCart5(cart);
+
+
+        });
+        $('.divpr5').on("click", "button.plus", function() {
+            // console.log("minus clicked");
+            a = this.id.slice(6, );
+            cart['pr' + a][0] = cart['pr' + a][0] + 1;
+            document.getElementById('valpr' + a).innerHTML = cart['pr' + a][0];
+            updateCart(cart);
+            updateCart5(cart);
+
+        });
+
+
+
+
+
+        // Event delegation for minus buttons
+    </script>
+
+
+
+
+
+    <script>
+        // Select all elements with the toggle-icon class
+        const toggleIcons = document.querySelectorAll('.toggle-icon');
+
+        toggleIcons.forEach(icon => {
+            icon.addEventListener('click', () => {
+                // Get the parent element of the icon
+                const parent = icon.parentElement;
+
+                // Find the associated elements within the parent element
+                const content = parent.nextElementSibling;
+                const minusIcon = parent.querySelector('.fa-minus');
+                const plusIcon = parent.querySelector('.fa-plus');
+
+                // Toggle the visibility of the content and icons
+                if (content.style.display === "none" || content.style.display === "") {
+                    content.style.display = "block";
+                    minusIcon.style.display = "inline";
+                    plusIcon.style.display = "none";
+                } else {
+                    content.style.display = "none";
+                    minusIcon.style.display = "none";
+                    plusIcon.style.display = "inline";
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        const elem = document.getElementById("sajad");
+        const elem1 = document.getElementById("saja");
+        const elem2 = document.getElementById("saj");
+        const elem3 = document.getElementById("sa");
+        const elem4 = document.getElementById("sajj");
+        const imgElem = document.getElementById("sajjjj");
+
+        elem.addEventListener('click', () => {
+            imgElem.src = "/static/images/Capture.PNG";
+        });
+        elem.addEventListener('click', () => {
+            document.getElementById("saja").style.color = "#153a5b";
+            document.getElementById("saja").style.background = "white";
+            document.getElementById("sajad").style.color = "white";
+            document.getElementById("sajad").style.background = "#153a5b";
+        });
+
+        elem1.addEventListener('click', () => {
+            imgElem.src = "/static/images/19.PNG";
+        });
+        elem1.addEventListener('click', () => {
+            document.getElementById("saja").style.color = "white";
+            document.getElementById("saja").style.background = "#153a5b";
+            document.getElementById("sajad").style.color = "#153a5b";
+            document.getElementById("sajad").style.background = "white";
+        });
+        elem2.addEventListener('click', () => {
+            imgElem.src = "/static/images/Capture.PNG";
+        });
+        elem2.addEventListener('click', () => {
+            document.getElementById("sa").style.color = "#153a5b";
+            document.getElementById("sa").style.background = "white";
+            document.getElementById("saj").style.color = "white";
+            document.getElementById("saj").style.background = "#153a5b";
+            document.getElementById("sajj").style.color = "#153a5b";
+            document.getElementById("sajj").style.background = "white";
+        });
+
+        elem3.addEventListener('click', () => {
+            imgElem.src = "/static/images/20.PNG";
+        });
+        elem3.addEventListener('click', () => {
+            document.getElementById("sa").style.color = "white";
+            document.getElementById("sa").style.background = "#153a5b";
+            document.getElementById("saj").style.color = "#153a5b";
+            document.getElementById("saj").style.background = "white";
+            document.getElementById("sajj").style.color = "#153a5b";
+            document.getElementById("sajj").style.background = "white";
+        });
+        elem4.addEventListener('click', () => {
+            imgElem.src = "/static/images/21.PNG";
+        });
+        elem4.addEventListener('click', () => {
+            document.getElementById("sajj").style.color = "white";
+            document.getElementById("sajj").style.background = "#153a5b";
+            document.getElementById("saj").style.color = "#153a5b";
+            document.getElementById("saj").style.background = "white";
+            document.getElementById("sa").style.color = "#153a5b";
+            document.getElementById("sa").style.background = "white";
+        });
+    </script>
+
+    <script>
+        let popup = document.getElementById("popup");
+
+
+        function openPopup() {
+            popup.classList.add("open-popup");
+            console.log(popup)
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var okButton = document.getElementById("okButton");
+            var popup = document.getElementById("popup");
+
+            if (okButton && popup) {
+                okButton.addEventListener("click", function() {
+                    popup.style.display = "none"; // Hide the popup
+                });
+            }
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

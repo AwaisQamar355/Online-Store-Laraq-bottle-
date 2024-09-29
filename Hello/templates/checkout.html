@@ -1,0 +1,716 @@
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaterWare.Com Site In Awais Qamar</title>
+    <link rel="stylesheet" href="{% static 'css/cssawais20.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Delicious+Handrawn&display=swap" rel="stylesheet">
+</head>
+<style>
+    .khani90 #popcart {
+        background-color: white;
+        color: black;
+        border: none;
+        font-size: 23px;
+    }
+</style>
+<style>
+    #popup {
+        width: 28%;
+        text-align: center;
+        position: relative;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: 37%;
+        margin-top: 10px;
+        background-color: white;
+        border-radius: 20px;
+        top: -1147%;
+    }
+    
+    #popup img {
+        width: 95px;
+        height: 95px;
+        border-radius: 50%;
+        text-align: center;
+        justify-content: center;
+        margin-left: 135px;
+        margin-top: -50px;
+    }
+    
+    #popup h1 {
+        color: black;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: 'Times New Roman', Times, serif;
+        padding-top: 40px;
+    }
+    
+    #popup h5 {
+        color: black;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: cursive;
+        padding: 30px;
+        padding-top: 20px;
+    }
+    
+    #popup button {
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px 0px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(0, 255, 0);
+        color: white;
+        font-size: 20px;
+        font-weight: 900;
+        font-family: cursive;
+        cursor: pointer;
+        width: 50%;
+        margin-left: 93px;
+        margin-bottom: 30px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-white fixed-top py-3">
+
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav khan">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="shopall.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span onclick="window.location.href='shopall.html'">SHOP ALL</span>
+                        </a>
+                        <ul class="dropdown-menu khan1">
+                            <div class="home5-page">
+                                <div class="home-page">
+                                    <a href="shopall.html"><button class="anas">Explore All</button></a>
+                                    <a href="hydrations.html"><button class="anasone">Hydration Set</button></a>
+                                    <li><a class="dropdown-item anas3" href="accessries.html">Filters & Accessories</a></li>
+                                    <li><a class="dropdown-item anas4" href="corporate.html">Corporate gifting</a></li>
+                                    <div class="home1-page">
+                                        <h6>Learn More</h6>
+                                        <li><a class="dropdown-item anas5" href="purevis.html">PureVis™ technology</a></li>
+                                        <li><a class="dropdown-item anas6" href="nanozero.html">Nano Zero technology</a></li>
+                                    </div>
+                                </div>
+                                <div class="home2-page">
+                                    <img src="/static/images/1.webp">
+                                    <h1>Purifaction</h1>
+                                    <p>Filter or Prufi water on the go</p>
+                                </div>
+                                <div class="home3-page">
+                                    <img src="/static/images/2.webp">
+                                    <h1>Home</h1>
+                                    <p>Equipe your home with Nano Zero technology</p>
+                                </div>
+                                <div class="home4-page">
+                                    <img src="/static/images/3.webp">
+                                    <h1>Drinkware</h1>
+                                    <p>Hydrate Effortlessy on the go</p>
+                                </div>
+                            </div>
+                        </ul>
+
+                    </li>
+                </ul>
+                <ul class="navbar-nav hassan">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="purification.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span onclick="window.location.href='purification.html'">PURIFICATION</span>
+                        </a>
+                        <ul class="dropdown-menu hassan1">
+                            <div class="home5-page">
+                                <div class="home-page">
+                                    <a href="exploreall.html"><button class="anas">Explore All</button></a>
+                                    <a href="hydrations.html"><button class="anasone">Hydration Set</button></a>
+                                    <li><a class="dropdown-item anas3" href="accessries.html">Filters & Accessories</a></li>
+                                    <li><a class="dropdown-item anas4" href="corporate.html">Corporate gifting</a></li>
+                                    <div class="home1-page">
+                                        <h6>Learn More</h6>
+                                        <li><a class="dropdown-item anas5" href="purevis.html">PureVis™ technology</a></li>
+                                        <li><a class="dropdown-item anas6" href="nanozero.html">Nano Zero technology</a></li>
+                                    </div>
+                                </div>
+                                <div class="home6-page">
+                                    <img src="/static/images/4.webp">
+                                    <h1>LARQ Bottle PureVis™</h1>
+                                    <p>From $99</p>
+                                </div>
+                                <div class="home7-page">
+                                    <img src="/static/images/5.webp">
+                                    <h1>LARQ Bottle Movement PureVis™</h1>
+                                    <p>From 89</p>
+                                </div>
+                                <div class="home9-page">
+                                    <img src="/static/images/6.webp">
+                                    <h1>LARQ Bottle Filtered</h1>
+                                    <p>From $49.95</p>
+                                </div>
+                            </div>
+                        </ul>
+
+                    </li>
+                </ul>
+                <ul class="navbar-nav hassan">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="homeone.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span onclick="window.location.href='homeone.html'">HOME</span>
+                        </a>
+                        <ul class="dropdown-menu hassan2">
+                            <div class="home5-page">
+                                <div class="home-page">
+                                    <a href="exploreall.html"><button class="anas">Explore All</button></a>
+                                    <a href="hydrations.html"><button class="anasone">Hydration Set</button></a>
+                                    <li><a class="dropdown-item anas3" href="accessries.html">Filters & Accessories</a></li>
+                                    <li><a class="dropdown-item anas4" href="corporate.html">Corporate gifting</a></li>
+                                    <div class="home1-page">
+                                        <h6>Learn More</h6>
+                                        <li><a class="dropdown-item anas5" href="purevis.html">PureVis™ technology</a></li>
+                                        <li><a class="dropdown-item anas6" href="nanozero.html">Nano Zero technology</a></li>
+                                    </div>
+                                </div>
+                                <div class="home6-page">
+                                    <img src="/static/images/7.webp">
+                                    <h1>LARQ Pitcher PureVis™</h1>
+                                    <p>From $139.00</p>
+                                </div>
+                                <div class="home7-page">
+                                    <img src="/static/images/8.webp">
+                                    <h1>LARQ Pitcher PureVis Pitcher</h1>
+                                    <p>From $79</p>
+                                </div>
+                                <div class="home9-page">
+                                    <img src="/static/images/8.webp">
+                                    <h1>LARQ Pitcher PureVis™</h1>
+                                    <p>From $139.95</p>
+                                </div>
+                            </div>
+                        </ul>
+
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav hassan">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="drinkware.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span onclick="window.location.href='drinkware.html'">DRINKWARE</span>
+                        </a>
+                        <ul class="dropdown-menu hassan3">
+                            <div class="home5-page">
+                                <div class="home-page">
+                                    <a href="exploreall.html"><button class="anas">Explore All</button></a>
+                                    <a href="hydrations.html"><button class="anasone">Hydration Set</button></a>
+                                    <li><a class="dropdown-item anas3" href="accessries.html">Filters & Accessories</a></li>
+                                    <li><a class="dropdown-item anas4" href="corporate.html">Corporate gifting</a></li>
+                                    <div class="home1-page">
+                                        <h6>Learn More</h6>
+                                        <li><a class="dropdown-item anas5" href="purevis.html">PureVis™ technology</a></li>
+                                        <li><a class="dropdown-item anas6" href="nanozero.html">Nano Zero technology</a></li>
+                                    </div>
+                                </div>
+                                <div class="home6-page">
+                                    <img src="/static/images/9.webp">
+                                    <h1>LARQ Bottle Swig Top</h1>
+                                    <p>From $39</p>
+                                </div>
+                                <div class="home7-page">
+                                    <img src="/static/images/10.webp">
+                                    <h1>LARQ Bottle Flip Top Bottle</h1>
+                                    <p>From $39</p>
+                                </div>
+                                <div class="home9-page">
+                                    <img src="/static/images/11.webp">
+                                    <h1>LARQ Bottle Twist Top</h1>
+                                    <p>From $29</p>
+                                </div>
+                            </div>
+                        </ul>
+
+                    </li>
+                </ul>
+
+            </div>
+            <a class="navbar-brand" href="home.html">LARQ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="technology.html">TECHNOLOGY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><i class="fa fa-user-o"></i></a>
+                    </li>
+
+                    <div class="nav-item khani90">
+                        <!-- <a class="nav-link" id="farha2" aria-current="page"> -->
+                        <button type="button" class="btn btn-secondary mx-2" id="popcart" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                <i class="fa fa-cart-arrow-down">(<span id="cart">0</span>)</i>
+                        <!-- </button> -->
+                        </a>
+                    </div>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link"><i class="fa fa-cart-arrow-down">(<span id="cart">0</span>)</i></a>
+                    </li> -->
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="checkout-page">
+        <main>
+            <div class="row g-5">
+                <div class="container" id="awais">
+                    <div class="col-md-7 col-lg-8" id="chaeckout1-page">
+                        <h1>Customer
+                        </h1>
+                        <h2 class="anam">________________________Express checkout with_____________________</h2>
+                        <div class="checkout3-page">
+                            <img src="/static/images/All Product Images/21.PNG">
+                            <img src="/static/images/All Product Images/22.PNG">
+                        </div>
+                        <img src="/static/images/All Product Images/23.PNG" class="anam1">
+                        <div class="checkout4-page">
+                            <!--<form action="checkout.html" method="POST">
+                                {% csrf_token %}
+                                <input type="email1" name="email1" id="email1" placeholder="Enter your E_mail">
+                                <button type="submit" value="submit">Continue</button>
+                            </form> -->
+                        </div>
+                        <div class="form-check" id="anam2">
+                            <input type="checkbox" id="checkbox1" name="checkbox1" class="form-check-input" id="save-info">
+                            <label class="form-check-label anam3" for="save-info">Subscribe to our newsletter.</label>
+                        </div>
+                        <h5 class="anam4">Already have an account? <span onclick="window.location.href='login.html'">Sign In</span></h5>
+                        <h1 class="mb-3">Billing address</h1>
+                        <form class="needs-validation" novalidate method="POST" action="checkout.html" id=anam5>
+                            {% csrf_token %}
+                            <input type="hidden" name="itemsJson" id="itemsJson">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <label for="firstName" class="form-label">First name</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="First Name" value="" required>
+                                    <div class="invalid-feedback">
+                                        Valid first name is required.
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <label for="lastName" class="form-label">Last name</label>
+                                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name" value="" required>
+                                    <div class="invalid-feedback">
+                                        Valid last name is required.
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="username" class="form-label">Username</label>
+                                    <div class="input-group has-validation">
+                                        <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+                                        <div class="invalid-feedback">
+                                            Your username is required.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="email" class="form-label">Email <span class="text-body-secondary"></span></label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your E_mail">
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address for shipping updates.
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="address" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="address" name="address" placeholder="Address One" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your shipping address.
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="address2" class="form-label">Address 2 <span class="text-body-secondary">(Optional)</span></label>
+                                    <input type="text" class="form-control" id="address2" name="address2" placeholder="Apartment Adress">
+                                </div>
+
+                                <div class="col-md-5">
+                                    <label for="country" class="form-label">Country</label>
+                                    <select class="form-select" id="country" name="country" id="country" required>
+                      <option value="">Choose...</option>
+                      <option>Pakistan</option>
+                      <option>India</option>
+                      <option>UK</option>
+                      <option>Loas</option>
+                      <option>Malaysia</option>
+                      <option>Myanmar</option>
+                      <option>indonasia</option>
+                      <option>Afganistan</option>
+                      <option>Australia</option>
+                      <option>Myanmar</option>
+                      <option>indonasia</option>
+                      <option>Afganistan</option>
+                      <option>Australia</option>
+                      <option>Myanmar</option>
+                      <option>indonasia</option>
+                      <option>Afganistan</option>
+                      <option>Australia</option>
+                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a valid country.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="state" class="form-label">State</label>
+                                    <select id="state" name="state" class="form-select" id="state" required>
+                      <option value="">Choose...</option>
+                      <option>Lahore</option>
+                      <option>Multan</option>
+                      <option>Islamabad</option>
+                      <option>kabirwala</option>
+                      <option>Jhung</option>
+                      <option>Gujrat</option>
+                      <option>Gujra</option>
+                      <option>Jhalam</option>
+                      <option>raiwand</option>
+                      <option>allabad</option>
+                      <option>bawalpur</option>
+                      <option>shorkot</option>
+                      <option>khanawal</option>
+                      <option>Muree</option>
+                      <option>faislabad</option>
+                      <option>naran khagan</option>
+                      <option>larkana</option>
+                    </select>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid state.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="zip" class="form-label">Zip</label>
+                                    <input type="text" id="zip" name="zip" class="form-control" id="zip" placeholder="Zip Code" required>
+                                    <div class="invalid-feedback">
+                                        Zip code required.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+
+
+                            <div class="form-check" id="anam7">
+                                <input type="checkbox" id="checkbox1" name="checkbox1" class="form-check-input" id="save-info">
+                                <label class="form-check-label anam6" for="save-info">Save this information for next time</label>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <h4 class="mb-3 anam8">Payment</h4>
+
+                            <div class="my-3" id="checkout-page7" name="paymentMethod">
+                                <div class="form-check" id="anam10">
+                                    <input id="paymentMethod" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                                    <label class="form-check-label anam9" for="credit">Credit card</label>
+                                </div>
+                                <div class="form-check" id="anam10">
+                                    <input id="paymentMethod" name="paymentMethod" type="radio" class="form-check-input" required>
+                                    <label class="form-check-label anam9" for="debit">Debit card</label>
+                                </div>
+                                <div class="form-check" id="anam10">
+                                    <input id="paymentMethod" name="paymentMethod" type="radio" class="form-check-input" required>
+                                    <label class="form-check-label anam9" for="paypal">PayPal</label>
+                                </div>
+                            </div>
+
+                            <div class="row gy-3">
+                                <div class="col-md-6">
+                                    <label for="cc-name" class="form-label">Name on card</label>
+                                    <input type="text" id="cardname" name="cardname" class="form-control" id="cc-name" placeholder="" required>
+                                    <small class="text-body-secondary">Full name as displayed on card</small>
+                                    <div class="invalid-feedback">
+                                        Name on card is required
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="cc-number" class="form-label">Credit card number</label>
+                                    <input type="text" id="cardnumber" name="cardnumber" class="form-control" id="cc-number" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Credit card number is required
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <label for="cc-expiration" class="form-label">Expiration</label>
+                                    <input type="text" id="expiration" name="expiration" class="form-control" id="cc-expiration" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Expiration date required
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <label for="cc-cvv" class="form-label">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" class="form-control" id="cc-cvv" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Security code required
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4 class="mb-3 anam8">Cash On delivery</h4>
+                            <div class="my-3" id="checkout-page7">
+                                <div class="form-check">
+                                    <input id="paymentMethod" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                                    <label class="form-check-label anam9" for="cash">Cash On delivery</label>
+                                </div>
+
+
+                                <hr class="my-4">
+
+                                <button class="w-100 btn  btn-lg anam11" type="submit" href="checkout.html">Continue to checkout</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col my-4" id="anam15">
+                        <h2 class="anam16">Step 1 - My Awesome Cart Express Checkout - <br> Review Your Cart Items</h2>
+                        <div class="my-4">
+                            <ul class="list-group anam17" id="items">
+                            </ul>
+                            <div class="anam18">
+                                <div class="anam19">
+                                    <h3>Subtotal</h3>
+                                    <b>$ <span id="totalPrice"></b>
+                                </div>
+                                <div class="anam19">
+                                    <h3>Shipping</h3>
+                                    <h5>--</h5>
+                                </div>
+                                <div class="anam19">
+                                    <h3>Tax</h3>
+                                    <h4>$0.00</h4>
+                                </div>
+                                <div class="anam19">
+                                    <a href=""><button>Promo/Gift Certificate</button></a>
+                                </div>
+                            </div>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb mt-3">
+                                    <li class="breadcrumb-item active" aria-current="page">Your Cart Total Is <b><span id="totalPrice1"></b>$.</span>Enter your details below & place your order. Thanks for using My Awesome Cart!</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="checkout-page2">
+                            <p>Have A Tracker?<a href="tracker.html">Click Here To Enter Your track order</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+    <div id="home33-page" class="section-p7">
+        <div class="home34-page">
+            <h1>Become an insider</h1>
+            <p>Receive exclusive offers, hydration news, and more when you subscribe.</p>
+            <div class="home35-page">
+                <form action="home.html" method="POST">
+                    {% csrf_token%}
+                    <input type="email" id="email" name="email" placeholder="Email Adress">
+                    <button type="submit" value="submit" onclick="openPopup()">Submit</button>
+                </form>
+            </div>
+            <div class="home36-page ">
+                <a href="https://www.facebook.com/livelarq/"><i class="fa fa-facebook "></i></a>
+                <a href="https://www.instagram.com/livelarq/"><i class=" fa fa-instagram "></i></a>
+                <a href="https://www.youtube.com/@stylewithuzma4"><i class=" fa fa-youtube-play "></i></a>
+                <a href="https://twitter.com/livelarq?lang=en"><i class=" fa fa-twitter "></i></a>
+            </div>
+
+        </div>
+        <div class="home38-page ">
+            <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="allreviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="retailer.html">Find a retailer</a></li>
+                <li><a href="corporate.html">Corporate gifting</a></li>
+            </ul>
+        </div>
+        <div class="home38-page ">
+            <ul>
+                <li><a href="https://basq.livelarq.com/">basq magazine</a></li>
+                <li><a href="press.html">Press</a></li>
+                <li><a href="ourstory.html">Our story</a></li>
+                <li><a href="affilite.html">Affiliate program</a></li>
+                <li><a href="larq.html">Ambassador program</a></li>
+            </ul>
+        </div>
+        <div class="home39-page ">
+            <img src="/static/images/1.gif ">
+        </div>
+    </div>
+
+    {% if messages %}
+    <div class="{{ message.tags }} " class="home1" id="popup" role="alert">
+        {% for message in messages %}
+        <img src="/static/images/All Product Images/108.PNG" class="awaiskhan3">
+        <h1 class="awaiskhan1">{{ message }}</h1>
+        <h5 class="awaiskhan2">You details has been successfully<br> submitted. Thanks! </h5>
+        <button type="button" id="okButton" onclick="closePopup()">OK</button> {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="home37-page " class="section-p7">
+        <a href="# "><button class="husi "><img src="/static/images/1.svg"><spam>United State</spam></button></a>
+        <a href="# "><button class="husi1 ">
+            Terms & Privacy</button></a>
+        <a href=""><button class="husi1 ">Accessibility</button></a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
+
+    {% block js %}
+    <script>
+        // Find out the cart items from localsyorage
+        if (localStorage.getItem('cart') == null) {
+            var cart = {};
+        } else {
+            cart = JSON.parse(localStorage.getItem('cart'));
+
+        }
+        console.log(cart);
+        var sum = 0;
+        var totalPrice = 0;
+        var totalPrice1 = 0;
+        if ($.isEmptyObject(cart)) {
+            // If object is empty
+            mystr = "<p>Your cart is empty, please add some items before checking out ! </p>"
+            $('#items').append(mystr);
+        }
+        for (item in cart) {
+            let name = cart[item][1];
+            let qty = cart[item][0];
+            let itemPrice = cart[item][2];
+            let itemPrice1 = cart[item][2];
+            sum = sum + qty;
+            totalPrice = totalPrice + qty * itemPrice;
+            totalPrice1 = totalPrice1 + qty * itemPrice1;
+            mystr = ` <li class="list-group-item d-flex justify-content-between align-items-center">
+                                ${name}
+                                <span class="badge bg-primary rounded-pill">${qty}</span>
+                            </li>`
+            $('#items').append(mystr);
+        }
+        document.getElementById('cart').innerHTML = sum;
+        document.getElementById('totalPrice').innerHTML = totalPrice;
+        document.getElementById('totalPrice1').innerHTML = totalPrice1;
+        $('#itemsJson').val(JSON.stringify(cart));
+        '{% if thank %}'
+        alert('Thanks for ordering with us. Your order id is {{id}}. Use it to track your order using our order tracker');
+        localStorage.clear();
+        document.location = "/tracker.html";
+        '{% endif %}'
+        $('#amount').val($('#totalPrice').html())
+    </script>
+
+    {% endblock %}
+
+
+
+
+
+
+    <script>
+        // Select all elements with the toggle-icon class
+        const toggleIcons = document.querySelectorAll('.toggle-icon');
+
+        toggleIcons.forEach(icon => {
+            icon.addEventListener('click', () => {
+                // Get the parent element of the icon
+                const parent = icon.parentElement;
+
+                // Find the associated elements within the parent element
+                const content = parent.nextElementSibling;
+                const minusIcon = parent.querySelector('.fa-minus');
+                const plusIcon = parent.querySelector('.fa-plus');
+
+                // Toggle the visibility of the content and icons
+                if (content.style.display === "none" || content.style.display === "") {
+                    content.style.display = "block";
+                    minusIcon.style.display = "inline";
+                    plusIcon.style.display = "none";
+                } else {
+                    content.style.display = "none";
+                    minusIcon.style.display = "none";
+                    plusIcon.style.display = "inline";
+                }
+            });
+        });
+    </script>
+
+    <script>
+        let popup = document.getElementById("popup");
+
+
+        function openPopup() {
+            popup.classList.add("open-popup");
+            console.log(popup)
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var okButton = document.getElementById("okButton");
+            var popup = document.getElementById("popup");
+
+            if (okButton && popup) {
+                okButton.addEventListener("click", function() {
+                    popup.style.display = "none"; // Hide the popup
+                });
+            }
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
